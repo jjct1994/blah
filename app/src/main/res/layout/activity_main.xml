@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:text="Play"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <Button
+        android:id="@+id/DeleteTrack"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Delete Track"
+        app:layout_constraintBottom_toTopOf="@+id/RecordingButton"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton"
+        app:layout_constraintVertical_bias="0.961"
+        tools:layout_editor_absoluteX="12dp" />
+
+
+    <ImageButton
+        android:id="@+id/RecordingButton"
+        android:layout_width="99dp"
+        android:layout_height="91dp"
+
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/microphone" />
+
+
+
+</android.support.constraint.ConstraintLayout>
